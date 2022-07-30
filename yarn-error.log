@@ -1,0 +1,144 @@
+Arguments: 
+  /Users/namlam/.nvm/versions/node/v16.14.0/bin/node /Users/namlam/.nvm/versions/node/v16.14.0/bin/yarn
+
+PATH: 
+  /Users/namlam/.nvm/versions/node/v16.14.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/namlam/.nvm/versions/node/v16.14.0/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.14.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@finbase%2fanalytics: Not found
+      at Request.params.callback [as _callback] (/Users/namlam/.nvm/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at Request.self.callback (/Users/namlam/.nvm/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:520:28)
+      at Request.<anonymous> (/Users/namlam/.nvm/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:520:28)
+      at IncomingMessage.<anonymous> (/Users/namlam/.nvm/versions/node/v16.14.0/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:639:28)
+      at IncomingMessage.emit (node:events:532:35)
+      at endReadableNT (node:internal/streams/readable:1346:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "@finbase/fincare",
+    "version": "1.0.0",
+    "private": true,
+    "dependencies": {
+      "@ant-design/icons": "^4.6.3",
+      "@craco/craco": "^6.2.0",
+      "@finbase/analytics": "^0.2.0",
+      "@finbase/customer": "^0.2.0",
+      "@finbase/features": "^0.5.0",
+      "@finbase/i18n": "^0.7.1",
+      "@finbase/sdk": "^0.15.1",
+      "@finbase/ui": "^2.0.2",
+      "antd": "^4.16.10",
+      "antd-dayjs-webpack-plugin": "^1.0.6",
+      "axios": "^0.21.1",
+      "craco-alias": "^3.0.1",
+      "craco-antd": "^1.19.0",
+      "dayjs": "^1.10.6",
+      "lodash": "^4.17.21",
+      "query-string": "^7.0.1",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-intl": "^5.20.9",
+      "react-query": "^3.19.6",
+      "react-router": "^5.2.0",
+      "react-router-dom": "^5.2.0",
+      "react-scripts": "4.0.3",
+      "universal-cookie": "^4.0.4",
+      "use-resize-observer": "^8.0.0",
+      "web-vitals": "^2.1.0"
+    },
+    "scripts": {
+      "build": "cross-env CI=true && craco build",
+      "prettier": "prettier -c --write \"**/(*.js|*.jsx|*.less)\"",
+      "start": "craco start",
+      "eslint": "eslint --cache --ext .js,.jsx ./src",
+      "stylelint": "stylelint --aei src/**/*.less",
+      "lint": "yarn eslint && yarn stylelint",
+      "test": "cross-env NODE_ENV=test craco test",
+      "verify": "yarn lint && cross-env CI=true yarn test --coverage",
+      "analyze": "source-map-explorer 'build/static/js/*.js'"
+    },
+    "eslintConfig": {
+      "extends": [
+        "react-app",
+        "react-app/jest"
+      ]
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "devDependencies": {
+      "@testing-library/jest-dom": "^5.12.0",
+      "@testing-library/react": "^11.2.7",
+      "@testing-library/react-hooks": "^7.0.0",
+      "@testing-library/user-event": "^13.2.1",
+      "babel-jest": "^26.6.3",
+      "cross-env": "^7.0.3",
+      "eslint-plugin-jest-dom": "^3.9.0",
+      "eslint-plugin-prettier": "^3.4.0",
+      "jest-junit": "^13.0.0",
+      "prettier": "^2.3.2",
+      "source-map-explorer": "^2.5.2",
+      "stylelint": "^13.13.1",
+      "stylelint-config-prettier": "^8.0.2",
+      "stylelint-prettier": "^1.2.0",
+      "webpack-filter-warnings-plugin": "^1.2.1"
+    },
+    "jest": {
+      "coverageReporters": [
+        "html",
+        "text",
+        "text-summary",
+        "cobertura"
+      ],
+      "collectCoverageFrom": [
+        "src/**/*.{js,jsx}",
+        "!src/index.js",
+        "!src/service-worker.js",
+        "!src/**/index.js",
+        "!src/App.js",
+        "!src/*.{js,jsx}",
+        "!src/config/*.js",
+        "!src/locales/*.js",
+        "!src/**/routes.js",
+        "!**/locales/**/*.*",
+        "!src/libs/test/**",
+        "!<rootDir>/node_modules/"
+      ],
+      "coverageThreshold": {
+        "global": {
+          "statements": 50,
+          "branches": 50,
+          "functions": 50,
+          "lines": 50
+        }
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,50 @@
+@N300: #35425b;
+@white: #ffffff;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .alert {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    margin-bottom: 24px;
+    height: 32px;
+    font-size: 24px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: -0.3px;
+    color: @N300;
+    white-space: nowrap;
+  }
+
+  .form {
+    height: 100%;
+    min-width: 450px;
+    :global {
+      .ant-input,
+      .ant-input-affix-wrapper,
+      .ant-input:hover,
+      .ant-input-affix-wrapper:hover .ant-input:focus,
+      .ant-input-affix-wrapper:focus {
+        background: none !important;
+        box-shadow: none !important;
+        color: @N300 !important;
+        background-color: @white !important;
+      }
+    }
+  }
+}
+
+.forgotPassword {
+  :global {
+    .ant-form-item-control-input-content {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}
