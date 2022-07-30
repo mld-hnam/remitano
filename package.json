@@ -29,15 +29,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "build": "cross-env CI=true && craco build",
-    "prettier": "prettier -c --write \"**/(*.js|*.jsx|*.less)\"",
-    "start": "craco start",
-    "eslint": "eslint --cache --ext .js,.jsx ./src",
-    "stylelint": "stylelint --aei src/**/*.less",
-    "lint": "yarn eslint && yarn stylelint",
-    "test": "cross-env NODE_ENV=test craco test",
-    "verify": "yarn lint && cross-env CI=true yarn test --coverage",
-    "analyze": "source-map-explorer 'build/static/js/*.js'"
+    "build": "craco build",
+    "start": "craco start"
   },
   "eslintConfig": {
     "extends": [
