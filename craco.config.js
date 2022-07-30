@@ -35,9 +35,6 @@ module.exports = {
             },
           },
         },
-        miniCssExtractPluginOptions: {
-          ignoreOrder: true, // Enable to remove warnings about conflicting order
-        },
       },
     },
   ],
